@@ -4,15 +4,11 @@ import matplotlib.pyplot as plt
 # Đọc dữ liệu từ file CSV
 data = pd.read_csv('C:/Users/ADMIN/PycharmProjects/pythonProject1/pythonProject/data/data-pt.csv')
 
-# **Tiền Xử Lý Dữ Liệu**
 
-## Xử lý giá trị thiếu
-# Kiểm tra giá trị thiếu trong dữ liệu
 print("Giá trị thiếu trong từng cột:")
 print(data.isnull().sum())
 
-# Có thể chọn các cách xử lý giá trị thiếu như loại bỏ hoặc thay thế
-data = data.dropna()  # Loại bỏ các hàng có giá trị thiếu (hoặc thay thế bằng giá trị trung bình, giá trị phổ biến, v.v.)
+data = data.dropna()
 
 ## Chuyển đổi kiểu dữ liệu
 # Đảm bảo các cột có kiểu dữ liệu phù hợp
